@@ -1,12 +1,34 @@
-# React + Vite
+# REACT Technical Session 2025 (React + Vite Setup)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This example projects provides a minimal setup to get React technical session delivered.
 
-Currently, two official plugins are available:
+# Topic of content
+>
+> 1. Introduction to React
+> 2. Setting Up the Environment
+> 3. JSX: JavaScript XML
+> 4. Components: The Building Blocks
+> 5. Event Handling
+> 6. Rendering & Conditional Rendering
+> 7. State and Effects
+> 8. Component Communication
+> 9. Styling in React
+> 10. Forms and User Input
+> 11. Routing and Navigation
+> 12. Managing Complex State
+> 13. Fetching Data
+> 14. Code Organization and Best Practices
+> 15. Testing React Applications
+> 16. React Suspense and Component Lazy Loading
+> 17. Error Boundaries
+> 18. Custom Hooks
+> 19. Portals
+> 20. Common coding patterns with REACT
+>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Topic wise Basic "Syntax“ and Complex running "Example“
+# Use Cases examples
 
-## Expanding the ESLint configuration
+> "The best way to get started is to quit talking and begin doing." – Walt Disney
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+#### Session By: Dibyanshu & Team
