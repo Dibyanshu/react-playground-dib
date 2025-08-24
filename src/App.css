@@ -40,3 +40,84 @@
 .read-the-docs {
   color: #888;
 }
+
+/* PPT-style layout */
+.ppt-root {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.ppt-header {
+  background: linear-gradient(90deg,#2b2b2b,#1f1f1f);
+  color: #fff;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.ppt-header .topic-title {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.ppt-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+}
+.explainer {
+  max-width: 900px;
+  background: rgba(255,255,255,0.02);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 6px 30px rgba(0,0,0,0.6);
+  color: inherit;
+}
+.loader {
+  color: #bdbdbd;
+  font-size: 1.1rem;
+}
+
+/* Footer panel */
+.ppt-footer {
+  position: relative;
+  background: rgba(0,0,0,0.3);
+  color: #fff;
+  transition: height 220ms ease;
+}
+.ppt-footer-bar {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.ppt-footer-bar button {
+  padding: 6px 10px;
+  font-size: 0.9rem;
+}
+.ppt-footer-bar .ppt-footer-toggle {
+  margin-left: auto;
+  opacity: 0.85;
+}
+.ppt-footer .ppt-footer-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 260ms ease, padding 180ms ease;
+  padding: 0 12px;
+}
+.ppt-footer.open .ppt-footer-content {
+  max-height: 320px;
+  padding: 12px;
+}
+.footer-code {
+  background: #0f1720;
+  color: #cbd5e1;
+  padding: 12px;
+  border-radius: 6px;
+  overflow: auto;
+}
+.active {
+  background: #646cff;
+  color: white;
+}
