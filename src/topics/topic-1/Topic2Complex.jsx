@@ -7,7 +7,7 @@ const sampleProducts = [
   { id: 4, name: 'Jacket', brand: 'C', price: 120 },
 ]
 
-export default function TopicComplex() {
+export default function Topic1Complex() {
   const [brandFilter, setBrandFilter] = useState('All')
 
   const brands = ['All', ...Array.from(new Set(sampleProducts.map(p => p.brand)))]

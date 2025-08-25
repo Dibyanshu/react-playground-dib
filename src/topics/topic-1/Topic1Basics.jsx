@@ -17,7 +17,7 @@ const codeSnippet = `// You don't write this code by hand. You build the pieces.
   <Footer />
 </App>`
 
-export default function TopicBasics() {
+export default function Topic1Basics() {
   return (
     <section className="topic-basics">
       <h4>Basic (Syntax) — Component tree</h4>

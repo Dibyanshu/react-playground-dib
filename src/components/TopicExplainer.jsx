@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import TopicBasics from '../topics/topic-1/TopicBasics'
-import TopicComplex from '../topics/topic-1/TopicComplex'
+import Topic1Basics from '../topics/topic-1/Topic1Basics'
+import Topic1Complex from '../topics/topic-1/Topic2Complex'
 
 export const footerTextContent = `This structure clearly shows how the application is a tree of nested, descriptive components.\n\nThe filter checkboxes update a filters state variable. The ProductGrid component is simply told to render the products that match the current filters state.`
 
@@ -26,8 +26,8 @@ export default function TopicExplainer({ topic }) {
     <main className="ppt-main">
       <article className="explainer">
         <h3>{topic}</h3>
-        <TopicBasics />
-        <TopicComplex />
+        <Topic1Basics />
+        <Topic1Complex />
       </article>
     </main>
   )

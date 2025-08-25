@@ -49,10 +49,11 @@
 }
 
 .ppt-header {
-  background: linear-gradient(90deg,#2b2b2b,#1f1f1f);
+  background: linear-gradient(180deg, #5c5c5c, #0e0e0e);
   color: #fff;
   padding: 1rem 2rem;
   border-bottom: 1px solid rgba(255,255,255,0.04);
+  border-radius: 20px 20px 0px 0px;
 }
 .ppt-header .topic-title {
   margin: 0;
@@ -84,6 +85,7 @@
   background: rgba(0,0,0,0.3);
   color: #fff;
   transition: height 220ms ease;
+  border-radius: 0px 0px 20px 20px;
 }
 .ppt-footer-bar {
   display: flex;
