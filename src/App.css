@@ -1,8 +1,8 @@
 #root {
-  max-width: 1280px;
+  min-width: 98vw;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 0px;
+  text-align: left;
 }
 
 .logo {
@@ -66,11 +66,11 @@
   padding: 3rem 2rem;
 }
 .explainer {
-  max-width: 900px;
+  min-width: calc(100vw - 160px);
   background: rgba(255,255,255,0.02);
   border-radius: 12px;
   padding: 2rem;
-  box-shadow: 0 6px 30px rgba(0,0,0,0.6);
+  box-shadow: 0 2px 23px -4px rgba(0, 0, 0, 0.6);
   color: inherit;
 }
 .loader {
@@ -121,3 +121,20 @@
   background: #646cff;
   color: white;
 }
+
+/* Topic demo styles */
+.topic-basics .basics-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 1rem;
+  align-items: start;
+}
+.topic-basics .visual-tree .node { background: rgba(255,255,255,0.02); padding:6px; margin:6px; border-radius:6px }
+.topic-basics .node.small { font-size:0.85rem; padding:4px }
+.topic-basics .code-block pre { background:#0b1220; color:#dbeafe; padding:12px; border-radius:6px; overflow:auto }
+
+.topic-complex .complex-wrap { display:flex; gap:1rem; align-items:flex-start }
+.topic-complex .filters { min-width:160px; background: rgba(255,255,255,0.02); padding:10px; border-radius:8px }
+.topic-complex .product-grid { display:grid; grid-template-columns: repeat(auto-fill,minmax(160px,1fr)); gap:10px; width:100% }
+.product-card { background: rgba(255,255,255,0.02); padding:10px; border-radius:8px }
+

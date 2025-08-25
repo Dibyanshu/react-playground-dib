@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import FooterText from './FooterText'
+import FooterCode from './FooterCode'
 
 export default function FooterPanel({ initialMode = 'text', contentText, contentCode }) {
   const [open, setOpen] = useState(false)
@@ -14,9 +16,9 @@ export default function FooterPanel({ initialMode = 'text', contentText, content
 
       <div className="ppt-footer-content">
         {mode === 'text' ? (
-          <div className="footer-text">{contentText}</div>
+          <FooterText text={contentText} />
         ) : (
-          <pre className="footer-code"><code>{contentCode}</code></pre>
+          <FooterCode code={contentCode} />
         )}
       </div>
     </div>

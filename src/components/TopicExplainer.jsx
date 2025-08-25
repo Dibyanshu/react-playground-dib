@@ -1,4 +1,10 @@
 import React, { useEffect, useState } from 'react'
+import TopicBasics from '../topics/topic-1/TopicBasics'
+import TopicComplex from '../topics/topic-1/TopicComplex'
+
+export const footerTextContent = `This structure clearly shows how the application is a tree of nested, descriptive components.\n\nThe filter checkboxes update a filters state variable. The ProductGrid component is simply told to render the products that match the current filters state.`
+
+export const footerCodeContent = `// Imperative (DOM-based)\n// 1) Find ProductGrid element\n// 2) Loop products and show/hide nodes\n\n// Declarative (React)\n// Update filter state -> ProductGrid re-renders filtered items.`
 
 export default function TopicExplainer({ topic }) {
   const [loading, setLoading] = useState(true)
@@ -20,15 +26,8 @@ export default function TopicExplainer({ topic }) {
     <main className="ppt-main">
       <article className="explainer">
         <h3>{topic}</h3>
-        <p>
-          This is a short explainer for <strong>{topic}</strong>. Use this area to
-          show key points, diagrams, or embed interactive examples.
-        </p>
-        <ul>
-          <li>Goal: Communicate the main idea clearly.</li>
-          <li>Keep slides focused and minimal.</li>
-          <li>Show code examples in the expandable footer.</li>
-        </ul>
+        <TopicBasics />
+        <TopicComplex />
       </article>
     </main>
   )

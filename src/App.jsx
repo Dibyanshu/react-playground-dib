@@ -1,6 +1,6 @@
 import './App.css'
 import Header from './components/Header'
-import TopicExplainer from './components/TopicExplainer'
+import TopicExplainer, { footerTextContent, footerCodeContent } from './components/TopicExplainer'
 import FooterPanel from './components/FooterPanel'
 import { useState } from 'react'
 
@@ -14,7 +14,7 @@ function App() {
     <div className="ppt-root">
       <Header title={`Topic: ${topic}`} />
       <TopicExplainer topic={topic} />
-      <FooterPanel contentText={sampleText} contentCode={sampleCode} />
+      <FooterPanel contentText={footerTextContent} contentCode={footerCodeContent} />
     </div>
   )
 }
