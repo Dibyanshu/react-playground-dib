@@ -1,8 +1,8 @@
 import './App.css'
 import Header from './components/Header'
-import TopicExplainer, { getFooterForTopic } from './components/TopicExplainer'
+import TopicExplainer from './components/TopicExplainer'
 import FooterPanel from './components/FooterPanel'
-import TopicSelector from './components/TopicSelector'
+import { getFooterForTopic } from './helpers/GetFooterForTopic'
 import { useState, useEffect, useMemo } from 'react'
 
 function App() {
