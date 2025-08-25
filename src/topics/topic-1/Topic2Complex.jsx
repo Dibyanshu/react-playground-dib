@@ -10,7 +10,7 @@ const sampleProducts = [
 export default function Topic1Complex() {
   const [brandFilter, setBrandFilter] = useState('All')
 
-  const brands = ['All', ...Array.from(new Set(sampleProducts.map(p => p.brand)))]
+  const brands = ['All', ...new Set(sampleProducts.map(p => p.brand))]
 
   const filtered = brandFilter === 'All' ? sampleProducts : sampleProducts.filter(p => p.brand === brandFilter)
 
