@@ -6,7 +6,7 @@ const initialUsers = [
   { id: 3, name: 'Carol' },
 ]
 
-export default function Topic3List() {
+export default function UseCase1() {
   const [users, setUsers] = useState(initialUsers)
   const [nextId, setNextId] = useState(4)
   const [filter, setFilter] = useState('')
