@@ -6,7 +6,7 @@ This example projects provides a minimal setup to get React technical session de
 >
 > 1. [Introduction to React](./README-Topic1.md)
 > 2. Setting Up the Environment
-> 3. JSX: JavaScript XML
+> 3. [JSX: JavaScript XML](./README-Topic3.md)
 > 4. Components: The Building Blocks
 > 5. Event Handling
 > 6. Rendering & Conditional Rendering
