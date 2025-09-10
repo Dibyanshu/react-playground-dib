@@ -87,7 +87,7 @@ export default function UseCase73() {
         <strong>Per-category summary:</strong>
         <div style={{ display: 'flex', gap: 12, marginTop: 8 }}>
           {Object.entries(aggregated.byCategory).map(([cat, s]) => (
-            <div key={cat} style={{ padding: 8, borderRadius: 6, background: '#fff7ed' }}>
+            <div key={cat} style={{ padding: 8, borderRadius: 6, background: 'rgba(15, 23, 42, 0.03)' }}>
               <div><strong>{cat}</strong></div>
               <div>count: {s.count}</div>
               <div>sum: {s.sum}</div>
