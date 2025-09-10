@@ -9,6 +9,7 @@ function App() {
   const topicOptions = useMemo(() => [
     { key: 'Topic 1: Introduction to React', label: 'Topic 1: Introduction to React' },
     { key: 'Topic 3: JSX - JavaScript XML', label: 'Topic 3: JSX - JavaScript XML' },
+    { key: 'Topic 7: State and Effects (React Hooks)', label: 'Topic 7: State and Effects (React Hooks)' }
   ], [])
 
   const [topic, setTopic] = useState(topicOptions[1].key)

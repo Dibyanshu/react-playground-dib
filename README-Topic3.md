@@ -35,6 +35,8 @@ function UserGreeting() {
 
 ### This example shows a ProductCard component that uses props, conditional logic, dynamic attributes, and event handlers all within JSX.
 
+[Link](src/topics/topic-3/Topic3Complex.jsx)
+
 ```Jsx
 function ProductCard({ product, onAddToCart }) {
   // Logic to determine CSS classes and text

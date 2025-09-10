@@ -30,6 +30,16 @@ This example projects provides a minimal setup to get React technical session de
 # Use Cases examples
 # Design of the web app
 
+# Bingo Game
+| === vs ==          | Forgot semicolon ;     | NaN is a number 🤯   | Debugging with console.log | "undefined is not a function" |
+|---------------------|-------------------------|----------------------|-----------------------------|--------------------------------|
+| Accidentally global var | Callback hell 🔥      | Hoisting confusion    | JSON.parse() error         | Off-by-one error               |
+| Used `this` wrong   | Wrote arrow fn →       | null vs undefined     | for...in vs for...of mixup | Missed a closing }             |
+| setTimeout(0) magic | Array.map misuse       | Type coercion weirdness| Infinite loop 🌀           | Tried to mutate const          |
+| `==[]` is true?!    | Missing return in fn   | Promises confusion    | Copy vs reference bug       | Regex headache 😵              |
+| var vs let vs const | isNaN vs Number.isNaN  | Template literal joy  | Spread/rest mixup           | Off-by-one in array index      |
+
+
 > "The best way to get started is to quit talking and begin doing." – Walt Disney
 
 #### Session By: Dibyanshu & Team

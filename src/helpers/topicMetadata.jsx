@@ -48,6 +48,10 @@ import UseCase3 from '../topics/topic-3/UseCase3'
 import UseCase4 from '../topics/topic-3/UseCase4'
 import UseCase5 from '../topics/topic-3/UseCase5'
 
+import UseCase71 from '../topics/topic-7/UseCase71'
+import UseCase72 from '../topics/topic-7/UseCase72'
+import UseCase73 from '../topics/topic-7/UseCase73'
+
 export const TOPICS = {
   'topic 1: introduction to react': {
     label: 'Topic 1: Introduction to React',
@@ -70,6 +74,15 @@ export const TOPICS = {
     ],
     footer: FOOTER['topic 3: jsx - javascript xml'],
   },
+  'topic 7: state and effects (react hooks)': {
+    label: 'Topic 7: State and Effects (React Hooks)',
+    steps: [
+      { id: 'useState / useEffect', label: 'useState / useEffect', Component: UseCase71 },
+      { id: 'useRef', label: 'useRef', Component: UseCase72 },
+      { id: 'useMemo', label: 'useMemo', Component: UseCase73 }
+    ],
+    footer: FOOTER['topic 7: state and effects (react hooks)'],
+  }
 }
 
 export default { SunIcon, MoonIcon, FOOTER, TOPICS }
