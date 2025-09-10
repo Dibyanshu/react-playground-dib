@@ -52,6 +52,12 @@ import UseCase71 from '../topics/topic-7/UseCase71'
 import UseCase72 from '../topics/topic-7/UseCase72'
 import UseCase73 from '../topics/topic-7/UseCase73'
 
+import UseCase81 from '../topics/topic-8/UseCase81'
+import UseCase82 from '../topics/topic-8/UseCase82'
+
+// Topics data structure: id, label, component, footer text/code
+// Used by App.jsx and TopicViewer.jsx to build navigation and render content
+
 export const TOPICS = {
   'topic 1: introduction to react': {
     label: 'Topic 1: Introduction to React',
@@ -82,7 +88,15 @@ export const TOPICS = {
       { id: 'useMemo', label: 'useMemo', Component: UseCase73 }
     ],
     footer: FOOTER['topic 7: state and effects (react hooks)'],
-  }
+  },
+  'topic8': {
+    label: 'Topic 8: Component Communucation',
+    steps: [
+      { id: 'Parent-to-Child', label: 'Parent-to-Child (Props)', Component: UseCase81 },
+      { id: 'Child-to-Parent', label: 'Child-to-Parent (Lifting State Up)', Component: UseCase82 }
+    ],
+    footer: FOOTER['topic8'],
+  },
 }
 
 export default { SunIcon, MoonIcon, FOOTER, TOPICS }

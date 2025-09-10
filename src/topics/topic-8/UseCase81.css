@@ -1,0 +1,32 @@
+.uc81-container {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.uc81-profile-header {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 12px;
+}
+
+.uc81-profile-email {
+  margin: 0;
+  color: #666;
+}
+
+.uc81-section {
+  margin-top: 12px;
+}
+
+.uc81-post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.uc81-post-item {
+  margin-bottom: 8px;
+}
+
+.uc81-post-body {
+  color: #444;
+}

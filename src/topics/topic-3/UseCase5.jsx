@@ -5,7 +5,7 @@ const MemoChild = React.memo(function MemoChild({ value, onAction }) {
   const renders = React.useRef(0)
   renders.current += 1
   return (
-    <div style={{ padding: 10, borderRadius: 8, background: '#f8fafc' }}>
+    <div style={{ padding: 10, borderRadius: 8, background: 'var(--bg, #f8fafc)' }}>
       <div>MemoChild renders: <strong>{renders.current}</strong></div>
       <div>value: <strong>{String(value)}</strong></div>
       <div style={{ marginTop: 8 }}>
@@ -20,7 +20,7 @@ function NonMemoChild({ value, onAction }) {
   const renders = React.useRef(0)
   renders.current += 1
   return (
-    <div style={{ padding: 10, borderRadius: 8, background: '#fff7ed' }}>
+    <div style={{ padding: 10, borderRadius: 8, background: 'var(--bg, #fff7ed)' }}>
       <div>NonMemoChild renders: <strong>{renders.current}</strong></div>
       <div>value: <strong>{String(value)}</strong></div>
       <div style={{ marginTop: 8 }}>
@@ -44,8 +44,12 @@ export default function UseCase5() {
   // A fake expensive derived value that we memoize with useMemo
   const expensive = React.useMemo(() => {
     // simulate CPU work
+    console.log(`Computed expensive value time stamp(Start): ${new Date().toLocaleTimeString()}`)
     let x = 0
-    for (let i = 0; i < 50000; i++) x += i % 7
+    for (let i = 0; i < 50000; i++) {
+      x += i;
+    }
+    console.log(`Computed expensive value time stamp(End): ${new Date().toLocaleTimeString()}`)
     return `${text} (${x})`
   }, [text])
 

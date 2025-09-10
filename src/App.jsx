@@ -3,16 +3,16 @@ import Header from './components/Header'
 import TopicExplainer from './components/TopicExplainer'
 import FooterPanel from './components/FooterPanel'
 import { getFooterForTopic } from './helpers/GetFooterForTopic'
+import { TOPICS } from './helpers/topicMetadata'
 import { useState, useEffect, useMemo } from 'react'
 
 function App() {
-  const topicOptions = useMemo(() => [
-    { key: 'Topic 1: Introduction to React', label: 'Topic 1: Introduction to React' },
-    { key: 'Topic 3: JSX - JavaScript XML', label: 'Topic 3: JSX - JavaScript XML' },
-    { key: 'Topic 7: State and Effects (React Hooks)', label: 'Topic 7: State and Effects (React Hooks)' }
-  ], [])
+  const topicOptions = useMemo(() =>
+    // derive options from central TOPICS mapping so navigation stays in sync
+    Object.entries(TOPICS).map(([key, meta]) => ({ key, label: meta.label })),
+  [])
 
-  const [topic, setTopic] = useState(topicOptions[1].key)
+  const [topic, setTopic] = useState(topicOptions[3].key)
 
   // Keyboard navigation: left/right arrows to move between topics
   useEffect(() => {
