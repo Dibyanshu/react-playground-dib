@@ -88,6 +88,6 @@ function UserSearch() {
 ## Use Cases
 
 1. [useState / useEffect](src/topics/topic-7/UseCase71.jsx): Building a search component that fetches data from an API. `useState` holds the search query, loading status, and results. `useEffect` triggers the API call when dependencies change.
-2. useRef: Directly access DOM elements (e.g., a `<video>` element) to call imperative methods like `.play()`/`.pause()` without causing re-renders.
-3. useMemo: Optimize expensive calculations (e.g., transforming large datasets for charts). `useMemo` re-computes only when its inputs change, preventing unnecessary work.
+2. [useRef](src/topics/topic-7/UseCase72.jsx): Directly access DOM elements (e.g., a `<video>` element) to call imperative methods like `.play()`/`.pause()` without causing re-renders.
+3. [useMemo](src/topics/topic-7/UseCase73.jsx): Optimize expensive calculations (e.g., transforming large datasets for charts). `useMemo` re-computes only when its inputs change, preventing unnecessary work.
 
