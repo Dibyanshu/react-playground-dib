@@ -64,7 +64,7 @@ export default function UseCase2() {
     <section className="topic3-conditional">
       <h4>Conditional UI — Authentication & Loading Examples</h4>
 
-      <div style={{display:'grid',gridTemplateColumns:'1fr 380px',gap:16,alignItems:'start'}}>
+      <div style={{display:'grid',gridTemplateColumns:'1fr 480px',gap:16,alignItems:'start'}}>
         <div>
           {/* Auth gating: show login form when not authenticated, profile when authenticated */}
           {!isAuthenticated ? (
@@ -102,12 +102,12 @@ export default function UseCase2() {
         <div>
           <h5>Notes & Example</h5>
           <pre style={{background:'#0b1220',color:'#dbeafe',padding:12,borderRadius:6,overflow:'auto'}}>
-{`// Early return for loading
-if (isLoading) return <Spinner />
+            {`// Early return for loading
+            if (isLoading) return <Spinner />
 
-// Conditional rendering inside JSX
-{isAuthenticated ? <UserProfile /> : <LoginForm />}
-`}
+            // Conditional rendering inside JSX
+            {isAuthenticated ? <UserProfile /> : <LoginForm />}
+          `}
           </pre>
         </div>
       </div>

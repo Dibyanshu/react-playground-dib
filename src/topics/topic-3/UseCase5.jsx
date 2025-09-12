@@ -44,12 +44,10 @@ export default function UseCase5() {
   // A fake expensive derived value that we memoize with useMemo
   const expensive = React.useMemo(() => {
     // simulate CPU work
-    console.log(`Computed expensive value time stamp(Start): ${new Date().toLocaleTimeString()}`)
     let x = 0
     for (let i = 0; i < 50000; i++) {
       x += i;
     }
-    console.log(`Computed expensive value time stamp(End): ${new Date().toLocaleTimeString()}`)
     return `${text} (${x})`
   }, [text])
 

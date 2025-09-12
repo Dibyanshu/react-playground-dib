@@ -28,13 +28,15 @@ export default function UseCase1() {
   }
 
   function shuffle() {
-    setUsers(u => {
-      const a = [...u]
-      for (let i = a.length - 1; i > 0; i--) {
+    setUsers(prev => {
+      const copy = [...prev]
+      for (let i = copy.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1))
-        ;[a[i], a[j]] = [a[j], a[i]]
+        const tmp = copy[i]
+        copy[i] = copy[j]
+        copy[j] = tmp
       }
-      return a
+      return copy
     })
   }
 
@@ -66,7 +68,7 @@ export default function UseCase1() {
           </div>
         </div>
 
-        <div style={{width:420}}>
+        <div style={{width:520}}>
           <h5>Notes & Code</h5>
           <p style={{marginTop:0}}>Use <code>.map()</code> to transform arrays into elements. Always supply a stable <code>key</code> (prefer an id). Using array index as key can cause subtle bugs when order changes.</p>
           <pre style={{background:'#0b1220',color:'#dbeafe',padding:12,borderRadius:6,overflow:'auto'}}>

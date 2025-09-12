@@ -39,7 +39,7 @@ export default function Topic3Basics() {
           </div>
         </div>
 
-        <div style={{width:420}}>
+        <div style={{width:520}}>
           <h5>JSX Source</h5>
           <pre style={{background:'#0b1220',color:'#dbeafe',padding:12,borderRadius:6,overflow:'auto'}}>
             <code>{codeSnippet}</code>

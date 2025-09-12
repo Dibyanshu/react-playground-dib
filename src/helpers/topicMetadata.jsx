@@ -85,7 +85,10 @@ export const TOPICS = {
     steps: [
       { id: 'useState / useEffect', label: 'useState / useEffect', Component: UseCase71 },
       { id: 'useRef', label: 'useRef', Component: UseCase72 },
-      { id: 'useMemo', label: 'useMemo', Component: UseCase73 }
+      { id: 'useMemo', label: 'useMemo', Component: UseCase73 },
+      { id: 'useMemo-simple', label: 'useMemo simple', Component: React.lazy(() => import('../topics/topic-7/memoized-simple')) },
+      { id: 'useCallback-simple', label: 'useCallback simple', Component: React.lazy(() => import('../topics/topic-7/callback-simple')) },
+      { id: 'memo-callback-simple', label: 'memo + useCallback simple', Component: React.lazy(() => import('../topics/topic-7/memo-callback-simple')) },
     ],
     footer: FOOTER['topic 7: state and effects (react hooks)'],
   },
