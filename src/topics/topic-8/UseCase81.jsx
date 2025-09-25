@@ -42,11 +42,19 @@ export default function UseCase81() {
     setError(null);
 
     Promise.all([
+      fetch(`https://jsonplaceholder.typicode.com/users`).then(r => r.json()),
       fetch(`https://jsonplaceholder.typicode.com/users/${userId}`).then(r => r.json()),
       fetch(`https://jsonplaceholder.typicode.com/posts?userId=${userId}`).then(r => r.json()),
     ])
-      .then(([userData, postsData]) => {
-        setUser(userData);
+      .then(([users, userData, postsData]) => {
+        const user = users;
+        console.log(user);
+        const filteredUsers = user.filter(d => {
+          return d.username.length > 7
+        });
+        console.log(filteredUsers);
+
+        setUser(filteredUsers[0]);
         setPosts(postsData);
         setLoading(false);
       })
@@ -57,7 +65,7 @@ export default function UseCase81() {
       });
   }, []);
 
-  if (loading) return <div>Loading user...</div>;
+  if (loading) return <div>Loading user XXXXX...</div>;
   if (error) return <div style={{ color: 'red' }}>{error}</div>;
 
   return (

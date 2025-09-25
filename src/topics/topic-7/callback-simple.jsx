@@ -1,8 +1,8 @@
 import React, { useState, useCallback } from "react";
 
-const Child = React.memo(({ onClick }) => {
+const Child = React.memo(({ onClick, count }) => {
   console.log("Child rendered");
-  return <button onClick={onClick}>Click Me</button>;
+  return <button onClick={onClick}>Click Me {count}</button>;
 });
 
 // function Child({ onClick }) {
@@ -22,7 +22,7 @@ export default function UseCallbackExample() {
     <div>
       <p>Parent Count: {count}</p>
       <button onClick={() => setCount(c => c + 1)}>Increment Parent</button>
-      <Child onClick={handleClick} />
+      <Child onClick={handleClick} count={count} />
     </div>
   );
 }

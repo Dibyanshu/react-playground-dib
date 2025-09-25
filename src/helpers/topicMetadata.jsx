@@ -55,6 +55,9 @@ import UseCase73 from '../topics/topic-7/UseCase73'
 import UseCase81 from '../topics/topic-8/UseCase81'
 import UseCase82 from '../topics/topic-8/UseCase82'
 
+import ContextAPIExample from '../topics/topic-12/ContextAPI-Basic'
+import ZustandCounter from '../topics/topic-12/ZustandCounter'
+
 // Topics data structure: id, label, component, footer text/code
 // Used by App.jsx and TopicViewer.jsx to build navigation and render content
 
@@ -99,6 +102,15 @@ export const TOPICS = {
       { id: 'Child-to-Parent', label: 'Child-to-Parent (Lifting State Up)', Component: UseCase82 }
     ],
     footer: FOOTER['topic8'],
+  },
+  'topic12': {
+    label: 'Topic 12: Managing Complex State',
+    steps: [
+      { id: 'context-basic', label: 'Basic Usage Context API', Component: ContextAPIExample },
+      { id: 'useReducer-basic', label: 'Basic Usage useReducer', Component: React.lazy(() => import('../topics/topic-12/useReducer-Basic')) },
+      { id: 'zustand', label: 'Zustand store (example)', Component: ZustandCounter },
+    ],
+    footer: FOOTER['topic12'],
   },
 }
 

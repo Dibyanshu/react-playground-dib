@@ -112,3 +112,4 @@ function FilterableProductList({ allProducts }) {
 1. **Parent-to-Child (Props):** Displaying user data. A `<UserPage>` component fetches user information and passes the user object down to child components like `<ProfileHeader user={user}>`, `<PostList user={user}>`, etc.
 2. **Child-to-Parent (Callbacks / Lifting State Up):** Handling forms. A `<Form>` parent component holds the overall form state. It passes down value props and `onChange` callback functions to individual `<Input>` child components. When an input changes, it calls the parent's function to update the central state.
 3. **Solving Prop Drilling (Context API / State Management):** Sharing global data like the current theme (`'dark'` or `'light'`) or authenticated user information. Instead of drilling these props through every component, they are placed in a central "Context" that any component in the tree can subscribe to directly.
+

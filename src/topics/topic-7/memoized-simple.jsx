@@ -1,27 +1,24 @@
-import React, { useState, useMemo, useEffect, use } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 
 export default function UseMemoExample() {
   const [count, setCount] = useState(0);
   // additional state used only to force re-renders without changing `count`
   const [tick, setTick] = useState(0);
-  const [squaredST, setSquaredST] = useState(0);
 
   // Expensive calculation (simulated with console.log)
   const squared = useMemo(() => {
-    console.log("Calculating square...");
+    console.log("Calculating square (inside memo)...");
     return count * count;
   }, [count]);
 
   useEffect(() => {
     console.log("Calculating square (no memo)...");
-    setSquaredST(count * count);
   });
 
   return (
     <div>
       <p>Count: {count}</p>
       <p>Squared (memoized): {squared}</p>
-      <p>Squared (no memo): {squaredST}</p>
       <div style={{ marginTop: 8 }}>
         <button onClick={() => setCount((c) => c + 1)}>Increment</button>
         <button onClick={() => setCount((c) => c - 1)}>Decrement</button>
