@@ -16,6 +16,7 @@ const ThemeContext = createContext('light');
   return (
     <ThemeContext.Provider value="dark">
       <MyComponent />
+      
     </ThemeContext.Provider>
   );
 }
